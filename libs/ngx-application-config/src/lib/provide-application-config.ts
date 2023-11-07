@@ -43,7 +43,7 @@ export const NGX_APPLICATION_CONFIG_INITIALIZER = {
   deps: [HttpClient, ApplicationConfig],
   multi: true
 }
-// TODO delete?
+
 export function injectApplicationConfig<C>(): C {
   return inject(ApplicationConfig<C>).getConfig()
 }
