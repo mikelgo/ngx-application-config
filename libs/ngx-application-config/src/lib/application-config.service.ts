@@ -5,7 +5,6 @@ import {Injectable} from "@angular/core";
 export class ApplicationConfig<C> {
   private  config: C | null = null;
   /**
-   * TODO MAKE ALL TO ENVIRONMENTPROVIDERS
    * TODO HOW TO HANDLE HTTP AS DEP
    */
 

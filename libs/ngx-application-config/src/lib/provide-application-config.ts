@@ -1,4 +1,4 @@
-import {APP_INITIALIZER, inject, Provider} from "@angular/core";
+import { APP_INITIALIZER, EnvironmentProviders, inject, makeEnvironmentProviders, Provider } from "@angular/core";
 import {ApplicationConfig} from "./application-config.service";
 import {ProvideApplicationConfigFeature} from "./features/make-feature";
 import {HttpClient} from "@angular/common/http";
@@ -50,9 +50,15 @@ export function injectApplicationConfig<C>(): C {
 
 export function provideApplicationConfig(
   ...features: ProvideApplicationConfigFeature[]
-): Provider[]{
+): EnvironmentProviders[]{
   return [
-    NGX_APPLICATION_CONFIG_INITIALIZER, ApplicationConfig, ...features.map((f) => f.providers)
+    makeEnvironmentProviders([
+      NGX_APPLICATION_CONFIG_INITIALIZER,
+      ApplicationConfig,
+      ...features.map((f) => f.providers)
+    ]),
+
+
   ]
 }
 
