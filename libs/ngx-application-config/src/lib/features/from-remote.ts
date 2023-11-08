@@ -1,4 +1,4 @@
-import {Injectable, InjectionToken, Provider, Type} from "@angular/core";
+import {InjectionToken, Provider} from "@angular/core";
 import {makeFeature} from "./make-feature";
 import {Observable} from "rxjs";
 

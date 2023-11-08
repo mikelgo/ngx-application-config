@@ -3,7 +3,7 @@ import {ApplicationConfig} from "./application-config.service";
 import {ProvideApplicationConfigFeature} from "./features/make-feature";
 import {HttpClient} from "@angular/common/http";
 import {NGX_APPLICATION_CONFIG_FROM_JSON_FEATURE} from "./features/from-local-json";
-import {defer, isObservable, of, tap} from "rxjs";
+import {defer, of, tap} from "rxjs";
 import {NGX_APPLICATION_CONFIG_FROM_REMOTE_FEATURE} from "./features/from-remote";
 
 

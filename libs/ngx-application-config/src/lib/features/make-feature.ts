@@ -1,4 +1,4 @@
-import { EnvironmentProviders, makeEnvironmentProviders, Provider } from "@angular/core";
+import {  Provider } from "@angular/core";
 
 export type FeatureKind = 'FromJson' | 'FromRemote';
 
