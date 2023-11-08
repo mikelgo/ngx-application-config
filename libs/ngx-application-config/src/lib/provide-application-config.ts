@@ -1,4 +1,4 @@
-import {APP_INITIALIZER, inject, InjectionToken, Provider} from "@angular/core";
+import {APP_INITIALIZER, inject, Provider} from "@angular/core";
 import {ApplicationConfig} from "./application-config.service";
 import {ProvideApplicationConfigFeature} from "./features/make-feature";
 import {HttpClient} from "@angular/common/http";
